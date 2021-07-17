@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pedroalvarez.sistema.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnMasMenos" layoutX="29.0" layoutY="373.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+/-" />
+      <Button fx:id="btnCero" layoutX="86.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="0" />
+      <Button fx:id="btnPunto" layoutX="145.0" layoutY="373.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="." />
+      <Button fx:id="btnIgual" layoutX="204.0" layoutY="373.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="=" />
+      <Button fx:id="btnDos" layoutX="86.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="2" />
+      <Button fx:id="btnTres" layoutX="145.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="3" />
+      <Button fx:id="btnMas" layoutX="204.0" layoutY="314.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+" />
+      <Button fx:id="btnUno" layoutX="29.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="1" textFill="#0d0d0d" />
+      <Button fx:id="btnCuatro" layoutX="31.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="4" />
+      <Button fx:id="btnMenos" layoutX="206.0" layoutY="250.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="-" />
+      <Button fx:id="btnSeis" layoutX="147.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="6" />
+      <Button fx:id="btnCinco" layoutX="88.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="5" />
+      <Button fx:id="btnSiete" layoutX="28.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="7" />
+      <Button fx:id="btnDivi" layoutX="203.0" layoutY="193.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="/" />
+      <Button fx:id="btnNueve" layoutX="144.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="9" />
+      <Button fx:id="btnOcho" layoutX="85.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="8" />
+      <Button fx:id="btn1x" layoutX="28.0" layoutY="130.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1/x" />
+      <Button fx:id="btnMulti" layoutX="202.0" layoutY="130.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="*" />
+      <Button fx:id="btnCE" layoutX="143.0" layoutY="130.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="CE" />
+      <Button fx:id="btnC" layoutX="85.0" layoutY="130.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="C" />
+      <Button fx:id="btnPorcen" layoutX="266.0" layoutY="285.0" mnemonicParsing="false" prefHeight="145.0" prefWidth="50.0" text="\%" />
+      <Button fx:id="btnXy" layoutX="266.0" layoutY="130.0" mnemonicParsing="false" prefHeight="145.0" prefWidth="50.0" text="xʸ" />
+      <TextField fx:id="txtValores" alignment="TOP_RIGHT" layoutX="33.0" layoutY="56.0" prefHeight="60.0" prefWidth="281.0">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </TextField>
+      <MenuBar layoutX="7.0" layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Tipo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Standar" />
+                  <MenuItem mnemonicParsing="false" text="Cientific" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+   <effect>
+      <DropShadow color="#00f2ff7d" />
+   </effect>
+</AnchorPane>
